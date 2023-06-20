@@ -1,0 +1,95 @@
+<!-- User Home Page -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Home Page</title>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav>
+		<ul>
+			<li><a href="https://www.5xtra.com/">visit Home</a></li>
+			<li><a href="https://www.5xtra.com/about-us">About</a></li>
+			<li><a href="https://www.extramarks.com/contact-us">Contact</a></li>
+			<li><a href="https://www.5xtra.com/">Registration and Login for the User
+        </a> </li>
+          <li>  <a href="https://www.5xtra.com/">Login for Admin</a></li>
+			<li><a href="#">File My Taxes</a></li>
+		</ul>
+	</nav>
+	<!-- Main Content -->
+	<h1 style="color: blue;"><a/h1>Tax Filing Application</h1>
+	<p>Welcome to the tax filing application. Here, you can file your taxes by providing the necessary information and documents.</p>
+	<h2>What is 80C?</h2>
+	<p>80C is a section of the Income Tax Act that provides tax deductions for investments made in certain financial instruments.</p>
+	<!-- File My Taxes Form -->
+	<form action="submit_tax_form.php" method="post" enctype="multipart/form-data">
+		<h2>File My Taxes</h2>
+		<label for="form_16">Form 16:</label>
+		<input type="file" name="form_16" id="form_16"><br>
+		<label for="payslip">Payslip:</label>
+		<input type="file" name="payslip" id="payslip"><br>
+		<label for="housing_loan">Housing Loan Interest and Principal Payment Certificate:</label>
+		<input type="file" name="housing_loan" id="housing_loan"><br>
+		<label for="investments">Investments made for Tax Planning:</label>
+		<input type="file" name="investments" id="investments"><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
+
+<!-- Admin Home Page -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Home Page</title>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Responses</a></li>
+            
+		</ul>
+	</nav>
+	<!-- Main Content -->
+	<h1>Tax Filing Application</h1>
+	<p>Welcome to the tax filing application. Here, you can view the responses submitted by the users.</p>
+	<!-- Responses Table -->
+    <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>Occupation</th>
+            <th>Salary per Annum</th>
+            <th>Form 16</th>
+            <th>Payslip</th>
+            <th>Housing Loan Interest and Principal Payment Certificate</th>
+            <th>Investments made for Tax Planning (80C,80D)</th>
+            <th>Submit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" name="name"></td>
+            <td><input type="email" name="email"></td>
+            <td><input type="tel" name="phone"></td>
+            <td><input type="text" name="address"></td>
+            <td><input type="text" name="occupation"></td>
+            <td><input type="number" name="salary"></td>
+            <td><input type="file" name="form16"></td>
+            <td><input type="file" name="payslip"></td>
+            <td><input type="file" name="housing_loan"></td>
+            <td><input type="file" name="investments"></td>
+            <td><button type="submit">Submit</button></td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>
